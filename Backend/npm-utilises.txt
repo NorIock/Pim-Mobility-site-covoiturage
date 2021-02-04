@@ -1,0 +1,9 @@
+npm init -y
+npm install mongodb
+npm install express
+npm install mongoose
+npm install cors
+npm install dotenv // Permet de stocker localement des variables dans le fichier
+npm install bcryptjs
+npm install jsonwebtoken
+npm install body-parser

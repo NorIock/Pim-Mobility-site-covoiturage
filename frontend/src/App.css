@@ -1,0 +1,459 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Form */
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+.card-container.card {
+  max-width: 550px !important;
+  padding: 40px 40px;
+}
+
+.card {
+  /* background-color: #f7f7f7; */
+  padding: 20px 25px 30px;
+  margin: 0 auto 25px;
+  margin-top: 80px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 10px;
+  border: 3px solid #317681;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.inside-card-body{
+  border: 3px solid #317681;
+  background-color: #317681;
+  text-align: center;
+  color: whitesmoke;
+  border-radius: 5px;
+}
+
+.profile-img-card {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 10px;
+  display: block;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* Error-notice */
+.error-notice {
+  margin: 1rem0;
+  padding: 0.5rem;
+  border: 1px solid #e94848;
+  border-radius: 8px;
+  background-color: #f5bcbc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.error-notice button {
+  border: none;
+  border-radius: 50%;
+  background-color: #e94848;
+  padding-bottom: 1.3rem;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  color: white;
+  text-align: center;
+
+}
+
+/* Navbar */
+.color-nav{
+  background-color: #317681;
+}
+
+.dropdown-color{
+  color: white;
+  background-color: #317681;
+}
+
+/* Display */
+
+.admin-display{
+  margin-top: 80px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.warning-profil-not-complete{
+  margin-top: 200px;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: center;
+}
+
+.trajet-aller-for-one-member{
+  margin-top: 80px;
+}
+
+/* Pour les boutons utilisés comme liens grâce à useHistory*/
+.link-button{
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: rgb(57, 99, 214);
+  padding: 5 1.5rem;
+  font-size: 1rem;
+  text-decoration: underline;
+  height: 40px;
+  /* background-color: #317681; */
+}
+
+/* Boutons sur le profil partiel */
+.button-envoyer-message-profil-partiel{
+  border: none;
+  background: none;
+  background-color: #317681;
+  color: whitesmoke;
+  padding: 12px 28px;
+  margin: 4px 2px;
+}
+.button-envoyer-message-profil-partiel:hover{
+  background-color: #065662;
+}
+
+.button-supprimer-du-covoiturage-profil-partiel{
+  border: none;
+  background: none;
+  background-color: #970c0c;
+  color: whitesmoke;
+  padding: 12px 28px;
+  margin: 4px 2px;
+}
+.button-supprimer-du-covoiturage-profil-partiel:hover{
+  background-color: #750909;
+}
+
+/* Pour les notifications */
+.notification-demande-covoiturage{
+  cursor: pointer;
+  margin-left: 10%;
+  text-align: center;
+  border: 1px solid #317681;
+  background-color: #317681;
+  border-radius: 10px;
+  width: 80%;
+  color:whitesmoke;
+}
+
+.notification-demande-covoiturage:hover{
+  background-color: #2a4c52;
+  color: whitesmoke;
+}
+
+.notification-demande-covoiturage-link{
+  color: whitesmoke;
+}
+
+.notification-demande-covoiturage-link:hover{
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.notification-fin-covoiturage{
+  cursor: pointer;
+  margin-left: 10%;
+  text-align: center;
+  border: 1px solid rgb(216, 155, 44);
+  background-color: rgb(216, 155, 44);
+  border-radius: 10px;
+  width: 80%;
+  color:whitesmoke;
+}
+
+.notification-fin-covoiturage:hover{
+  background-color: rgb(153, 112, 35);
+  color: whitesmoke;
+}
+
+.notification-demande-covoiturage-refus{
+  cursor: pointer;
+  margin-left: 10%;
+  text-align: center;
+  border: 1px solid #970c0c;
+  background-color: #970c0c;
+  border-radius: 10px;
+  width: 80%;
+  color:whitesmoke;
+}
+
+.notification-demande-covoiturage-refus:hover{
+  background-color: #750909;
+  color: whitesmoke;
+}
+
+.notification-demande-covoiturage-accord{
+  cursor: pointer;
+  margin-left: 10%;
+  text-align: center;
+  border: 1px solid #0f640f;
+  background-color: #0f640f;
+  border-radius: 10px;
+  width: 80%;
+  color:whitesmoke;
+}
+
+.notification-demande-covoiturage-accord:hover{
+  background-color: #093d09;
+  color: whitesmoke;
+}
+
+.notification-message{
+  cursor: pointer;
+  margin-left: 10%;
+  text-align: center;
+  border: 1px solid #ddc6a8;
+  background-color: #ddc6a8;
+  border-radius: 10px;
+  width: 80%;
+  color:whitesmoke;
+}
+
+.notification-message:hover{
+  background-color: #948571;
+  color: whitesmoke;
+}
+
+.home-link{
+  color: whitesmoke;
+}
+
+.home-link:hover{
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.space-between-submit{
+  margin-left: 30px;
+}
+
+/* body{
+  background-color: #ddc6a8;
+  color: whitesmoke;
+} */
+
+/* Tableaux */
+
+.affichage-profil{
+  border: 3px solid #317681;
+  border-radius: 10px;
+}
+
+.affichage-profil thead tr{
+  background-color: #317681;
+  color: whitesmoke;
+}
+
+.alerte{
+  border: 3px solid #c01b1b;
+  border-radius: 10px;
+}
+
+.alerte thead tr{
+  background-color: #c01b1b;
+  color: whitesmoke;
+}
+
+.quitter-ou-supprimer{
+  border: 3px solid rgb(182, 19, 19);
+  border-radius: 10px;
+}
+
+.quitter-ou-supprimer thead tr{
+  background-color: rgb(182, 19, 19);
+  color: whitesmoke;
+}
+
+.div-affichage-matching{
+  border-top: 3px solid #317681;
+  border-left: 3px solid #317681;
+  border-right: 3px solid #317681;
+  border-bottom: 3px solid #317681;
+  margin-bottom: 20px;
+}
+
+.affichage-matching{
+  border-top: 3px solid #317681;
+}
+.affichage-matching thead{
+  background-color: #317681;
+  color: whitesmoke;
+}
+
+.affichage-stat{
+  border: 3px solid #317681;
+  border-radius: 10px;
+}
+
+
+.demandes-covoiturages-recues{
+  /* border: 2px solid #317681; */
+  border-top: 3px solid #317681;
+  border-left: 3px solid #317681;
+  border-right: 3px solid #317681;
+  margin-bottom: 0px;
+}
+
+.demandes-covoiturages-recues thead tr{
+  background-color: #317681;
+  color: whitesmoke;
+}
+
+.demandes-covoiturages-recues-boutons{
+  border-bottom: 3px solid #317681;
+  border-left: 3px solid #317681;
+  border-right: 3px solid #317681;
+  padding-left: 5%;
+}
+
+/* Barre de navigation des notifications pour les admins */
+.admin-notification-nav{
+  margin-top: 0px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #317681;
+}
+
+.admin-notification-button{
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: whitesmoke;
+  padding: 0 0.5rem;
+  width: 25%;
+  height: 50px;
+}
+
+.admin-notification-button:hover{
+  background-color: #065662;
+}
+
+/* Barre de navigation supplémentaire */
+.second-nav{
+  margin-top: 56px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #317681;
+}
+
+.second-nav-button{
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: whitesmoke;
+  padding: 0 0.5rem;
+  width: 25%;
+  height: 50px;
+}
+
+.second-nav:hover{
+  background-color: #065662;
+}
+
+/* Pages des statistiques */
+
+.affichage-stat{
+  border: 3px solid #317681;
+  margin-bottom: 20px;
+}
+
+.affichage-stat h5{
+  text-align: center;
+  background-color: #317681;
+  color: whitesmoke;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+}
+
+.affichage-stat table{
+  margin-top: 0px;
+}
+
+.affichage-stat table tr:hover{
+  background-color: #317681;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.hover-ponctuel:hover{
+  background-color: #317681;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.affichage-stat-sans-pointeur{
+  border: 3px solid #317681;
+  margin-bottom: 20px;
+}
+
+.affichage-stat-sans-pointeur h5{
+  text-align: center;
+  background-color: #317681;
+  color: whitesmoke;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+}
+
+.affichage-stat-sans-pointeur table{
+  margin-top: 0px; 
+}
+
+.affichage-stat-sans-pointeur tr:hover{
+  background-color: #317681;
+  color: whitesmoke;
+}

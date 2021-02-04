@@ -1,0 +1,1 @@
+// Dans le delete du membre, pensez à supprimer les trajets qui lui correspondent
