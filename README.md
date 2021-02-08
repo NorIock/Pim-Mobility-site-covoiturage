@@ -1,5 +1,5 @@
-# Pim-Mobility-site-covoiturage
-Site de covoiturage planifié réalisé lors de mon stage de fin de formation
+# Pim-Mobility-site-covoiturage-MERN
+Site de covoiturage planifié réalisé avec MERN lors de mon stage de fin de formation
 
 Il s’agit d’un site de covoiturage planifié conçu pour la plaine de l’Ain de déplacements professionnels du domicile jusqu’au lieu de travail pour les trajets 
 aller comme retour pour tous les jours travaillés.
